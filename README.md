@@ -1,12 +1,9 @@
 # markdown-it-anchor-span
 
-[![Build Status](https://img.shields.io/travis/jay-hodgson/markdown-it-br/master.svg?style=flat)](https://travis-ci.org/jay-hodgson/markdown-it-br)
-[![NPM version](https://img.shields.io/npm/v/markdown-it-br.svg?style=flat)](https://www.npmjs.org/package/markdown-it-br)
-[![Coverage Status](https://img.shields.io/coveralls/jay-hodgson/markdown-it-br/master.svg?style=flat)](https://coveralls.io/r/jay-hodgson/markdown-it-br?branch=master)
+[![Build Status](https://img.shields.io/travis/malt03/markdown-it-anchor-span/master.svg?style=flat)](https://travis-ci.org/jay-hodgson/markdown-it-br)
+[![NPM version](https://img.shields.io/npm/v/markdown-it-anchor-span.svg?style=flat)](https://www.npmjs.org/package/markdown-it-br)
 
 > AnchorSpan plugin for [markdown-it](https://github.com/markdown-it/markdown-it) markdown parser.
-
-__v1.+ requires `markdown-it` v4.+, see changelog.__
 
 `Hello {|anchor|} World!` => `Hello <span id="anchor"></span>`
 
@@ -37,4 +34,4 @@ package system, module will add itself globally as `window.markdownitAnchorSpan`
 
 
 ## License
-[MIT](https://github.com/markdown-it/markdown-it-sub/blob/master/LICENSE)
+[MIT](https://github.com/malt03/markdown-it-anchor-span/blob/master/LICENSE)
