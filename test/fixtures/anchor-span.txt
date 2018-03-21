@@ -1,0 +1,21 @@
+.
+s {|f|} test
+.
+<p>s <span id="f"></span> test</p>
+.
+
+.
+bold with ** a line b{|foo|}reak in the middle ** of it
+.
+<p>bold with ** a line b<span id="foo"></span>reak in the middle ** of it</p>
+.
+
+coverage
+.
+*~f
+.
+<p>*~f</p>
+.
+
+clean up init (constructor)
+remove icon
