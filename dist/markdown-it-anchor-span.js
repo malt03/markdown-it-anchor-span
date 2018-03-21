@@ -10,9 +10,9 @@ function anchor_span(state, silent) {
       max = state.posMax,
       start = state.pos;
 
-  const openBracket = 0x7B; // {
-  const pipe = 0x7C; // |
-  const closeBracket = 0x7D; // }
+  var openBracket = 0x7B; // {
+  var pipe = 0x7C; // |
+  var closeBracket = 0x7D; // }
 
   if (state.src.charCodeAt(start) !== openBracket || state.src.charCodeAt(start + 1) !== pipe) { return false; }
   if (silent) { return false; } // don't run any pairs in validation mode
