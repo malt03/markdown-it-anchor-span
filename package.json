@@ -7,8 +7,8 @@
     "markdown-it-plugin",
     "markdown-it",
     "markdown",
-    "br",
-    "text"
+    "anchor",
+    "span"
   ],
   "scripts": {
     "browserify": "(printf \"/*! ${npm_package_name} ${npm_package_version} ${npm_package_homepage} @license MIT */\" && browserify ./ -s markdownitAnchorSpan) > dist/markdown-it-anchor-span.js",
