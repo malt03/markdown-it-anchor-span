@@ -11,7 +11,7 @@
     "text"
   ],
   "scripts": {
-    "browserify": "(printf \"/*! ${npm_package_name} ${npm_package_version} ${npm_package_homepage} @license MIT */\" && browserify ./ -s markdownitBr) > dist/markdown-it-anchor-span.js",
+    "browserify": "(printf \"/*! ${npm_package_name} ${npm_package_version} ${npm_package_homepage} @license MIT */\" && browserify ./ -s markdownitAnchorSpan) > dist/markdown-it-anchor-span.js",
     "predist": "npm run test",
     "dist": "rm -fr dist && mkdir dist && npm run browserify && npm run minify",
     "lint": "eslint --reset index.js",
