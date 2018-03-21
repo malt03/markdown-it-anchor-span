@@ -2,6 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/malt03/markdown-it-anchor-span/master.svg?style=flat)](https://travis-ci.org/jay-hodgson/markdown-it-br)
 [![NPM version](https://img.shields.io/npm/v/markdown-it-anchor-span.svg?style=flat)](https://www.npmjs.org/package/markdown-it-br)
+[![Coverage Status](https://coveralls.io/repos/github/malt03/markdown-it-anchor-span/badge.svg?branch=master)](https://coveralls.io/github/malt03/markdown-it-anchor-span?branch=master)
 
 > AnchorSpan plugin for [markdown-it](https://github.com/markdown-it/markdown-it) markdown parser.
 
