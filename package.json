@@ -19,8 +19,7 @@
     "prepublish": "npm run dist",
     "pretest": "npm run lint",
     "test": "npm run lint && mocha -R spec",
-    "coverage": "rm -rf coverage && istanbul cover node_modules/.bin/_mocha",
-    "test-ci": "npm run lint && istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf coverage"
+    "test-ci": "npm run lint"
   },
   "homepage": "https://github.com/malt03/markdown-it-anchor-span",
   "repository": {
@@ -34,7 +33,6 @@
   "main": "index.js",
   "devDependencies": {
     "browserify": "*",
-    "coveralls": "^2.11.2",
     "eslint": "0.10.2",
     "eslint-plugin-nodeca": "^1.0.0",
     "istanbul": "*",
