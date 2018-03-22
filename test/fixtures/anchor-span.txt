@@ -1,4 +1,10 @@
 .
+{|abcde|}
+.
+<p><span id="abcde"></span></p>
+.
+
+.
 s {|f|} test
 .
 <p>s <span id="f"></span> test</p>
