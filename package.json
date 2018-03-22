@@ -31,7 +31,6 @@
     "url": "https://github.com/malt03/markdown-it-anchor-span/issues"
   },
   "license": "MIT",
-  "main": "index.js",
   "devDependencies": {
     "browserify": "*",
     "coveralls": "*",
