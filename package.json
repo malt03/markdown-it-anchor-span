@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-anchor-span",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tag for markdown-it markdown parser.",
   "main": "index.js",
   "keywords": [
@@ -15,7 +15,7 @@
     "predist": "npm run test",
     "dist": "rm -fr dist && mkdir dist && npm run browserify && npm run minify",
     "lint": "eslint --reset index.js",
-    "minify": "uglifyjs dist/markdown-it-anchor-span.js -cm -b beautify=false,preamble='\"/*! markdown-it-anchor-span 1.0.0 https://github.com/malt03/markdown-it-anchor-span @license MIT */\"' > dist/markdown-it-anchor-span.min.js",
+    "minify": "uglifyjs dist/markdown-it-anchor-span.js -cm -b beautify=false,preamble='\"/*! markdown-it-anchor-span 1.0.1 https://github.com/malt03/markdown-it-anchor-span @license MIT */\"' > dist/markdown-it-anchor-span.min.js",
     "prepublish": "npm run dist",
     "pretest": "npm run lint",
     "test": "npm run lint && mocha -R spec",
