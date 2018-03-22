@@ -19,7 +19,7 @@ function anchor_span(state, silent) {
 
   state.pos = start + 2;
 
-  while (state.pos < max - 1) {
+  while (state.pos < max) {
     if (state.src.charCodeAt(state.pos) === closeBracket && state.src.charCodeAt(state.pos - 1) === pipe) {
       found = true;
       break;
