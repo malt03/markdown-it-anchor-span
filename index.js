@@ -9,18 +9,16 @@ function anchor_span(state, silent) {
       max = state.posMax,
       start = state.pos;
 
-  var openBracket = 0x7B; // {
-  var pipe = 0x7C; // |
-  var closeBracket = 0x7D; // }
+  var dollar = 0x24; // $
 
-  if (state.src.charCodeAt(start) !== openBracket || state.src.charCodeAt(start + 1) !== pipe) { return false; }
+  if (state.src.charCodeAt(start) !== dollar || state.src.charCodeAt(start + 1) !== dollar) { return false; }
   if (silent) { return false; } // don't run any pairs in validation mode
   if (start + 4 >= max) { return false; }
 
   state.pos = start + 2;
 
   while (state.pos < max) {
-    if (state.src.charCodeAt(state.pos) === closeBracket && state.src.charCodeAt(state.pos - 1) === pipe) {
+    if (state.src.charCodeAt(state.pos) === dollar && state.src.charCodeAt(state.pos - 1) === dollar) {
       found = true;
       break;
     }
@@ -48,10 +46,10 @@ function anchor_span(state, silent) {
   // Earlier we checked !silent, but this implementation does not need it
   token         = state.push('anchor_span_open', 'span', 1);
   token.attrPush(["id", content]);
-  token.markup  = '{|';
+  token.markup  = '$$';
 
   token         = state.push('anchor_span_close', 'span', -1);
-  token.markup  = '|}';
+  token.markup  = '$$';
 
   state.pos = state.posMax + 1;
   state.posMax = max;
